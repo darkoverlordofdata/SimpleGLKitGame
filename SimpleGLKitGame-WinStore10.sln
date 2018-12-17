@@ -1,0 +1,44 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26228.4
+MinimumVisualStudioVersion = 15.0.26206.0
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SimpleGLKitGame", "SimpleGLKitGame", "{0EEE4FF8-8D7E-4D1E-B94C-87194156680E}"
+	ProjectSection(SolutionItems) = preProject
+		.gitattributes = .gitattributes
+		.gitignore = .gitignore
+		readme.md = readme.md
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SimpleGLKitGame", "SimpleGLKitGame.vsimporter\SimpleGLKitGame-WinStore10\SimpleGLKitGame.vcxproj", "{871A2014-05F5-4A36-A58C-143E7E00ABB7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|ARM = Debug|ARM
+		Debug|Win32 = Debug|Win32
+		Release|ARM = Release|ARM
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{871A2014-05F5-4A36-A58C-143E7E00ABB7}.Debug|ARM.ActiveCfg = Debug|ARM
+		{871A2014-05F5-4A36-A58C-143E7E00ABB7}.Debug|ARM.Build.0 = Debug|ARM
+		{871A2014-05F5-4A36-A58C-143E7E00ABB7}.Debug|ARM.Deploy.0 = Debug|ARM
+		{871A2014-05F5-4A36-A58C-143E7E00ABB7}.Debug|Win32.ActiveCfg = Debug|Win32
+		{871A2014-05F5-4A36-A58C-143E7E00ABB7}.Debug|Win32.Build.0 = Debug|Win32
+		{871A2014-05F5-4A36-A58C-143E7E00ABB7}.Debug|Win32.Deploy.0 = Debug|Win32
+		{871A2014-05F5-4A36-A58C-143E7E00ABB7}.Release|ARM.ActiveCfg = Release|ARM
+		{871A2014-05F5-4A36-A58C-143E7E00ABB7}.Release|ARM.Build.0 = Release|ARM
+		{871A2014-05F5-4A36-A58C-143E7E00ABB7}.Release|ARM.Deploy.0 = Release|ARM
+		{871A2014-05F5-4A36-A58C-143E7E00ABB7}.Release|Win32.ActiveCfg = Release|Win32
+		{871A2014-05F5-4A36-A58C-143E7E00ABB7}.Release|Win32.Build.0 = Release|Win32
+		{871A2014-05F5-4A36-A58C-143E7E00ABB7}.Release|Win32.Deploy.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{871A2014-05F5-4A36-A58C-143E7E00ABB7} = {0EEE4FF8-8D7E-4D1E-B94C-87194156680E}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {95976D58-BE1F-4F88-BF8F-B2814C2ACE88}
+	EndGlobalSection
+EndGlobal
