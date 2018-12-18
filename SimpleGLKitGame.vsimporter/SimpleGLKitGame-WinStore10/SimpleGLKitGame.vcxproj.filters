@@ -1,29 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <Filter Include="Common">
-      <UniqueIdentifier>{aea8fb25-1e2b-496e-94ec-5afc79bfdd06}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Assets">
       <UniqueIdentifier>{c24dabbb-e2ea-4b69-b2bf-d297f5ccd012}</UniqueIdentifier>
     </Filter>
-    <Filter Include="SimpleGLKitGame">
-      <UniqueIdentifier>{E1E49631-C784-4038-80E0-F2F873AD5266}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="SimpleGLKitGame\CocosDenshion">
-      <UniqueIdentifier>{061792B2-1309-4F45-A94B-3F984F9C1E52}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="SimpleGLKitGame\SGGResources">
-      <UniqueIdentifier>{AD340139-52E5-47FE-944F-A7F0D130FF37}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="SimpleGLKitGame\Supporting Files">
-      <UniqueIdentifier>{A8B4D730-CCDB-4983-9029-5E4528F51DF1}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="SimpleGLKitGame\Supporting Files\en">
-      <UniqueIdentifier>{346EE2C2-DE82-4659-8E3B-780863D54468}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Xcode Variable Files">
       <UniqueIdentifier>{B1F9C54F-FFD4-4FA4-B3DD-62A03F622706}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Application">
+      <UniqueIdentifier>{E1E49631-C784-4038-80E0-F2F873AD5266}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Application\CocosDenshion">
+      <UniqueIdentifier>{061792B2-1309-4F45-A94B-3F984F9C1E52}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Application\Resources">
+      <UniqueIdentifier>{AD340139-52E5-47FE-944F-A7F0D130FF37}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Application\Supporting Files">
+      <UniqueIdentifier>{A8B4D730-CCDB-4983-9029-5E4528F51DF1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Application\Supporting Files\en">
+      <UniqueIdentifier>{346EE2C2-DE82-4659-8E3B-780863D54468}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Application\DarkGame">
+      <UniqueIdentifier>{19094b3b-d952-4f44-9afd-cda511f02d55}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -52,78 +52,60 @@
       <Filter>Assets</Filter>
     </Image>
     <ClInclude Include="..\..\SimpleGLKitGame\CocosDenshion\CDAudioManager.h">
-      <Filter>SimpleGLKitGame\CocosDenshion</Filter>
+      <Filter>Application\CocosDenshion</Filter>
     </ClInclude>
     <ClInclude Include="..\..\SimpleGLKitGame\CocosDenshion\CDConfig.h">
-      <Filter>SimpleGLKitGame\CocosDenshion</Filter>
+      <Filter>Application\CocosDenshion</Filter>
     </ClInclude>
     <ClInclude Include="..\..\SimpleGLKitGame\CocosDenshion\CDOpenALSupport.h">
-      <Filter>SimpleGLKitGame\CocosDenshion</Filter>
+      <Filter>Application\CocosDenshion</Filter>
     </ClInclude>
     <ClInclude Include="..\..\SimpleGLKitGame\CocosDenshion\CocosDenshion.h">
-      <Filter>SimpleGLKitGame\CocosDenshion</Filter>
+      <Filter>Application\CocosDenshion</Filter>
     </ClInclude>
     <ClInclude Include="..\..\SimpleGLKitGame\CocosDenshion\SimpleAudioEngine.h">
-      <Filter>SimpleGLKitGame\CocosDenshion</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\SimpleGLKitGame\SGGAppDelegate.h">
-      <Filter>SimpleGLKitGame</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\SimpleGLKitGame\SGGSprite.h">
-      <Filter>SimpleGLKitGame</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\SimpleGLKitGame\SGGViewController.h">
-      <Filter>SimpleGLKitGame</Filter>
+      <Filter>Application\CocosDenshion</Filter>
     </ClInclude>
     <ClInclude Include="..\..\SimpleGLKitGame\SimpleGLKitGame-Prefix.pch" />
     <ClangCompile Include="..\..\SimpleGLKitGame\CocosDenshion\CDAudioManager.m">
-      <Filter>SimpleGLKitGame\CocosDenshion</Filter>
+      <Filter>Application\CocosDenshion</Filter>
     </ClangCompile>
     <ClangCompile Include="..\..\SimpleGLKitGame\CocosDenshion\CDOpenALSupport.m">
-      <Filter>SimpleGLKitGame\CocosDenshion</Filter>
+      <Filter>Application\CocosDenshion</Filter>
     </ClangCompile>
     <ClangCompile Include="..\..\SimpleGLKitGame\CocosDenshion\CocosDenshion.m">
-      <Filter>SimpleGLKitGame\CocosDenshion</Filter>
+      <Filter>Application\CocosDenshion</Filter>
     </ClangCompile>
     <ClangCompile Include="..\..\SimpleGLKitGame\CocosDenshion\SimpleAudioEngine.m">
-      <Filter>SimpleGLKitGame\CocosDenshion</Filter>
-    </ClangCompile>
-    <ClangCompile Include="..\..\SimpleGLKitGame\SGGAppDelegate.m">
-      <Filter>SimpleGLKitGame</Filter>
-    </ClangCompile>
-    <ClangCompile Include="..\..\SimpleGLKitGame\SGGSprite.m">
-      <Filter>SimpleGLKitGame</Filter>
-    </ClangCompile>
-    <ClangCompile Include="..\..\SimpleGLKitGame\SGGViewController.m">
-      <Filter>SimpleGLKitGame</Filter>
+      <Filter>Application\CocosDenshion</Filter>
     </ClangCompile>
     <ClangCompile Include="..\..\SimpleGLKitGame\main.m">
-      <Filter>SimpleGLKitGame\Supporting Files</Filter>
+      <Filter>Application\Supporting Files</Filter>
     </ClangCompile>
     <SBInfoPlistCopy Include="..\..\SimpleGLKitGame\SimpleGLKitGame-Info.plist" />
     <SBResourceCopy Include="..\..\SimpleGLKitGame\SGGResources\Player.png">
-      <Filter>SimpleGLKitGame\SGGResources</Filter>
+      <Filter>Application\Resources</Filter>
     </SBResourceCopy>
     <SBResourceCopy Include="..\..\SimpleGLKitGame\SGGResources\Projectile.png">
-      <Filter>SimpleGLKitGame\SGGResources</Filter>
+      <Filter>Application\Resources</Filter>
     </SBResourceCopy>
     <SBResourceCopy Include="..\..\SimpleGLKitGame\SGGResources\Target.png">
-      <Filter>SimpleGLKitGame\SGGResources</Filter>
+      <Filter>Application\Resources</Filter>
     </SBResourceCopy>
     <SBResourceCopy Include="..\..\SimpleGLKitGame\SGGResources\YouLose.png">
-      <Filter>SimpleGLKitGame\SGGResources</Filter>
+      <Filter>Application\Resources</Filter>
     </SBResourceCopy>
     <SBResourceCopy Include="..\..\SimpleGLKitGame\SGGResources\YouWin.png">
-      <Filter>SimpleGLKitGame\SGGResources</Filter>
+      <Filter>Application\Resources</Filter>
     </SBResourceCopy>
     <SBResourceCopy Include="..\..\SimpleGLKitGame\SGGResources\background-music-aac.caf">
-      <Filter>SimpleGLKitGame\SGGResources</Filter>
+      <Filter>Application\Resources</Filter>
     </SBResourceCopy>
     <SBResourceCopy Include="..\..\SimpleGLKitGame\SGGResources\pew-pew.wav">
-      <Filter>SimpleGLKitGame\SGGResources</Filter>
+      <Filter>Application\Resources</Filter>
     </SBResourceCopy>
     <SBResourceCopy Include="..\..\SimpleGLKitGame\en.lproj\InfoPlist.strings">
-      <Filter>SimpleGLKitGame\Supporting Files\en</Filter>
+      <Filter>Application\Supporting Files\en</Filter>
     </SBResourceCopy>
     <Text Include="SimpleGLKitGame-Debug-xcvars.txt">
       <Filter>Xcode Variable Files</Filter>
@@ -142,16 +124,36 @@
   <ItemGroup>
     <ClInclude Include="pch.h" />
     <ClInclude Include="App.xaml.h" />
+    <ClInclude Include="..\..\SimpleGLKitGame\DarkAppDelegate.h">
+      <Filter>Application\DarkGame</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SimpleGLKitGame\DarkSprite.h">
+      <Filter>Application\DarkGame</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SimpleGLKitGame\DarkViewController.h">
+      <Filter>Application\DarkGame</Filter>
+    </ClInclude>
+    <ClInclude Include="IDarkGame.h">
+      <Filter>Application\DarkGame</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <None Include="project.json" />
   </ItemGroup>
   <ItemGroup>
-    <StoryboardCompile Include="..\..\SimpleGLKitGame\MainStoryboard.storyboard.backup">
-      <Filter>SimpleGLKitGame</Filter>
-    </StoryboardCompile>
+    <ClangCompile Include="..\..\SimpleGLKitGame\DarkAppDelegate.m">
+      <Filter>Application\DarkGame</Filter>
+    </ClangCompile>
+    <ClangCompile Include="..\..\SimpleGLKitGame\DarkSprite.m">
+      <Filter>Application\DarkGame</Filter>
+    </ClangCompile>
+    <ClangCompile Include="..\..\SimpleGLKitGame\DarkViewController.m">
+      <Filter>Application\DarkGame</Filter>
+    </ClangCompile>
+  </ItemGroup>
+  <ItemGroup>
     <StoryboardCompile Include="..\..\SimpleGLKitGame\MainStoryboard.storyboard">
-      <Filter>SimpleGLKitGame</Filter>
+      <Filter>Application\Supporting Files</Filter>
     </StoryboardCompile>
   </ItemGroup>
 </Project>

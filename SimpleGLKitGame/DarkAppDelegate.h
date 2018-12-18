@@ -25,30 +25,8 @@ SOFTWARE.
 ******************************************************************/
 #import <UIKit/UIKit.h>
 
-#import "DarkAppDelegate.h"
+@interface DarkAppDelegate : UIResponder <UIApplicationDelegate>
 
-int main(int argc, char *argv[])
-{
-    @autoreleasepool {
-        return UIApplicationMain(argc, argv, nil, NSStringFromClass([DarkAppDelegate class]));
-    }
-}
+@property (strong, nonatomic) UIWindow *window;
 
-#ifdef WINOBJC
-/**
- * UWP Setup
- *
- * Override the default UIApplication class implementation
- * for UIApplicationMain, so the WinObjC runtime knows how
- * large to render the application.
- */
- @implementation UIApplication(UIApplicationInitialStartupMode)
-+ (void)setStartupDisplayMode:(WOCDisplayMode*)mode {
-	mode.autoMagnification = TRUE;
-	mode.sizeUIWindowToFit = TRUE;
-	mode.fixedWidth = 0;
-	mode.fixedHeight = 0;
-	mode.magnification = 1.0;
-}
 @end
-#endif

@@ -23,32 +23,42 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 ******************************************************************/
-#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+#import <GLKit/GLKit.h>
 
-#import "DarkAppDelegate.h"
-
-int main(int argc, char *argv[])
+typedef struct DarkTexturedVertex
 {
-    @autoreleasepool {
-        return UIApplicationMain(argc, argv, nil, NSStringFromClass([DarkAppDelegate class]));
-    }
-}
+	CGPoint geometryVertex;
+	CGPoint textureVertex;
 
-#ifdef WINOBJC
-/**
- * UWP Setup
- *
- * Override the default UIApplication class implementation
- * for UIApplicationMain, so the WinObjC runtime knows how
- * large to render the application.
- */
- @implementation UIApplication(UIApplicationInitialStartupMode)
-+ (void)setStartupDisplayMode:(WOCDisplayMode*)mode {
-	mode.autoMagnification = TRUE;
-	mode.sizeUIWindowToFit = TRUE;
-	mode.fixedWidth = 0;
-	mode.fixedHeight = 0;
-	mode.magnification = 1.0;
-}
+} DarkTexturedVertex;
+
+typedef struct DarkTexturedQuad
+{
+	DarkTexturedVertex bl;
+	DarkTexturedVertex br;
+	DarkTexturedVertex tl;
+	DarkTexturedVertex tr;
+
+} DarkTexturedQuad;
+
+
+@interface DarkSprite : NSObject
+
+@property (assign) GLKVector2 Position;
+@property (assign) CGSize ContentSize;
+@property (assign) GLKVector2 MoveVelocity;
+@property (strong) GLKBaseEffect *Effect;
+@property (assign) DarkTexturedQuad Quad;
+@property (strong) GLKTextureInfo *TextureInfo;
+
+// native methods
+- (id)initWithFile:(NSString *)fileName effect:(GLKBaseEffect *)effect;
+
+// DarkSprite methods are PascalCase
+- (void)Render;
+- (void)Update:(float)dt;
+- (CGRect)BoundingBox;
+- (GLKMatrix4)ModelMatrix;
+
 @end
-#endif

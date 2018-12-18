@@ -23,32 +23,32 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 ******************************************************************/
-#import <UIKit/UIKit.h>
+#import <GLKit/GLKit.h>
+#import "DarkSprite.h"
+#import "IDarkGame.h"
+#import "SimpleAudioEngine.h"
 
-#import "DarkAppDelegate.h"
+@interface DarkViewController : GLKViewController
 
-int main(int argc, char *argv[])
-{
-    @autoreleasepool {
-        return UIApplicationMain(argc, argv, nil, NSStringFromClass([DarkAppDelegate class]));
-    }
-}
+@property (strong, nonatomic) EAGLContext *Context;
+@property (strong) GLKBaseEffect *Effect;
+@property (strong) DarkSprite *Player;
+@property (strong) NSMutableArray *Children;
+@property (assign) float TimeSinceLastSpawn;
+@property (strong) NSMutableArray *Projectiles;
+@property (strong) NSMutableArray *Targets;
+@property (assign) int TargetsDestroyed;
 
-#ifdef WINOBJC
-/**
- * UWP Setup
- *
- * Override the default UIApplication class implementation
- * for UIApplicationMain, so the WinObjC runtime knows how
- * large to render the application.
- */
- @implementation UIApplication(UIApplicationInitialStartupMode)
-+ (void)setStartupDisplayMode:(WOCDisplayMode*)mode {
-	mode.autoMagnification = TRUE;
-	mode.sizeUIWindowToFit = TRUE;
-	mode.fixedWidth = 0;
-	mode.fixedHeight = 0;
-	mode.magnification = 1.0;
-}
+// GLKViewController/native method
+- (void)glkView:(GLKView *)view drawInRect : (CGRect)rect;
+- (void)viewDidLoad;
+- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation;
+- (void)update;
+
+// DarkViewController methods are PascalCase
+- (void)AddSprite : (DarkSprite *)sprite;
+- (void)SetPlayer : (DarkSprite *)sprite;
+- (void)OnTap:(UITapGestureRecognizer *)recognizer;
+- (void)AddTarget;
+
 @end
-#endif

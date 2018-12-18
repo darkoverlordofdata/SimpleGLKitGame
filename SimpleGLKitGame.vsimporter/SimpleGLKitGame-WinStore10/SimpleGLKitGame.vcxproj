@@ -180,6 +180,7 @@
     <AppxManifest Include="Package.appxmanifest">
       <SubType>Designer</SubType>
     </AppxManifest>
+    <ClangCompile Include="..\..\SimpleGLKitGame\DarkViewController.m" />
     <Xml Include="default.rd.xml" />
     <None Include="SimpleGLKitGame_TemporaryKey.pfx" />
     <None Include="project.json" />
@@ -190,6 +191,7 @@
     <Image Include="Assets\Square44x44Logo.targetsize-24_altform-unplated.png" />
     <Image Include="Assets\StoreLogo.png" />
     <Image Include="Assets\Wide310x150Logo.scale-200.png" />
+    <ClInclude Include="IDarkGame.h" />
     <ClInclude Include="pch.h" />
     <ClInclude Include="App.xaml.h">
       <DependentUpon>App.xaml</DependentUpon>
@@ -205,9 +207,9 @@
     <ClInclude Include="..\..\SimpleGLKitGame\CocosDenshion\CDOpenALSupport.h" />
     <ClInclude Include="..\..\SimpleGLKitGame\CocosDenshion\CocosDenshion.h" />
     <ClInclude Include="..\..\SimpleGLKitGame\CocosDenshion\SimpleAudioEngine.h" />
-    <ClInclude Include="..\..\SimpleGLKitGame\SGGAppDelegate.h" />
-    <ClInclude Include="..\..\SimpleGLKitGame\SGGSprite.h" />
-    <ClInclude Include="..\..\SimpleGLKitGame\SGGViewController.h" />
+    <ClInclude Include="..\..\SimpleGLKitGame\DarkAppDelegate.h" />
+    <ClInclude Include="..\..\SimpleGLKitGame\DarkSprite.h" />
+    <ClInclude Include="..\..\SimpleGLKitGame\DarkViewController.h" />
     <ClInclude Include="..\..\SimpleGLKitGame\SimpleGLKitGame-Prefix.pch" />
     <ClangCompile Include="..\..\SimpleGLKitGame\CocosDenshion\CDAudioManager.m">
       <AdditionalOptions>$(AdditionalOptions) -fno-objc-arc</AdditionalOptions>
@@ -221,9 +223,8 @@
     <ClangCompile Include="..\..\SimpleGLKitGame\CocosDenshion\SimpleAudioEngine.m">
       <AdditionalOptions>$(AdditionalOptions) -fno-objc-arc</AdditionalOptions>
     </ClangCompile>
-    <ClangCompile Include="..\..\SimpleGLKitGame\SGGAppDelegate.m" />
-    <ClangCompile Include="..\..\SimpleGLKitGame\SGGSprite.m" />
-    <ClangCompile Include="..\..\SimpleGLKitGame\SGGViewController.m" />
+    <ClangCompile Include="..\..\SimpleGLKitGame\DarkAppDelegate.m" />
+    <ClangCompile Include="..\..\SimpleGLKitGame\DarkSprite.m" />
     <ClangCompile Include="..\..\SimpleGLKitGame\main.m" />
     <SBInfoPlistCopy Include="..\..\SimpleGLKitGame\SimpleGLKitGame-Info.plist">
       <ExcludedFromBuild Condition="'$(Configuration)'=='Debug'">false</ExcludedFromBuild>
@@ -242,7 +243,6 @@
       <VariantDir>en.lproj</VariantDir>
     </SBResourceCopy>
     <StoryboardCompile Include="..\..\SimpleGLKitGame\MainStoryboard.storyboard" />
-    <StoryboardCompile Include="..\..\SimpleGLKitGame\MainStoryboard.storyboard.backup" />
     <Text Include="SimpleGLKitGame-Debug-xcvars.txt">
       <DeploymentContent>false</DeploymentContent>
     </Text>
